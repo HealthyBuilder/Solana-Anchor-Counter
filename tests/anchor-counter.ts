@@ -32,6 +32,6 @@ describe("anchor-counter", () => {
     .rpc();
 
     const account = await program.account.counter.fetch(counter.publicKey);
-    expect(account.count.toNumber()).to.equal(0);
+    expect(account.count.toNumber()).to.equal(1);
   });
 });
